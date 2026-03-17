@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # IT Operations Analytics & SLA Monitoring Platform
 
 ## Overview
@@ -70,4 +69,3 @@ Aspiring Data Analyst \| Big Data & AI
 =======
 # IT-Operations-Analytics
 IT Service Desk analytics project with realistic SLA monitoring, ticket lifecycle analysis and operational performance insights (SQL, Python, Power BI)
->>>>>>> 9e389e4c004bacd2afb31571d7b8330fa0c57614
