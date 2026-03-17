@@ -1,0 +1,6 @@
+channel_id;channel_name;weight
+1;Phone;0.42
+2;Portal;0.28
+3;Email;0.18
+4;Chat;0.09
+5;Walk-up;0.03

@@ -1,0 +1,9 @@
+group_id;group_name;group_type
+1;N1 Service Desk;L1
+2;Workplace Support;L2
+3;Identity & Access;L2
+4;Network Operations;L2
+5;Business Apps;L2
+6;Infrastructure;L2
+7;Field Support;L2
+8;Security Operations;L2

@@ -1,0 +1,4 @@
+shift_id;shift_name;start_hour;end_hour;weight
+1;Morning;7;15;0.35
+2;Standard;8;16;0.4
+3;Late;10;18;0.25
