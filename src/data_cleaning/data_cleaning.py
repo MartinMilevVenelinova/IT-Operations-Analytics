@@ -17,7 +17,6 @@ def load_data():
     return datasets
 
 def clean_tickets(df):
-    # Convert dates
     date_cols = [
         "created_at", "assigned_at", "first_response_at",
         "resolved_at", "closed_at"
@@ -25,6 +24,25 @@ def clean_tickets(df):
 
     for col in date_cols:
         df[col] = pd.to_datetime(df[col], errors="coerce")
+
+    return df
+
+def finalize_tickets(df):
+    flag_cols = [
+        "escalated_flag",
+        "wrong_escalation_flag",
+        "escalation_returned_flag",
+        "missing_minimum_data_flag",
+        "reopened_flag",
+        "assignment_sla_breached",
+        "action_sla_breached"
+    ]
+
+    for col in flag_cols:
+        df[col] = df[col].astype(int)
+
+    df["reopen_count"] = df["reopen_count"].fillna(0).astype(int)
+    df["user_claim_count"] = df["user_claim_count"].fillna(0).astype(int)
 
     return df
 
@@ -37,8 +55,8 @@ def save_data(datasets):
 def main():
     datasets = load_data()
 
-    # Clean tickets table
     datasets["tickets"] = clean_tickets(datasets["tickets"])
+    datasets["tickets"] = finalize_tickets(datasets["tickets"])
 
     save_data(datasets)
 
