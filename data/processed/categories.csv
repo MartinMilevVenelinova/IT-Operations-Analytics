@@ -1,0 +1,15 @@
+category_id,category_name,subcategory_name,ticket_share,expected_escalation_rate,default_target_group_id
+1,Access Management,Password Reset,0.14,0.0,3
+2,Access Management,MFA / SSO,0.08,0.3,3
+3,Hardware,Laptop / Desktop,0.1,0.35,2
+4,Hardware,Printer / Scanner,0.07,0.18,7
+5,Network,VPN,0.1,0.3,4
+6,Network,LAN / WiFi,0.05,0.38,4
+7,Applications,Microsoft 365,0.11,0.27,5
+8,Applications,ERP / Internal App,0.09,0.42,5
+9,Telephony,Softphone / Contact Center,0.05,0.22,5
+10,Security,Antivirus / Alert,0.03,0.55,8
+11,Accounts,User Creation / Update,0.08,0.16,3
+12,Monitoring,Server / Infra Alert,0.02,0.68,6
+13,Remote Access,VDI / Citrix,0.04,0.34,2
+14,Other,General Request,0.04,0.1,2

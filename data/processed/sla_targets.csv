@@ -1,0 +1,6 @@
+sla_id,priority_id,priority_name,assignment_sla_minutes,action_sla_minutes,business_hours_only,description
+1,1,Critical,5,15,0,Critical priority SLA target
+2,2,High,10,45,0,High priority SLA target
+3,3,Medium,20,120,0,Medium priority SLA target
+4,4,Normal,30,30,0,Normal priority SLA target
+5,5,Low,60,240,0,Low priority SLA target
