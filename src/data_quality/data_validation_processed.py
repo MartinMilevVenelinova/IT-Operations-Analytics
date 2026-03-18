@@ -22,6 +22,22 @@ def convert_dates(df):
 
     return df
 
+def analyze_missing_values(df):
+    print("\n--- MISSING VALUES ANALYSIS ---")
+
+    total = len(df)
+
+    for col in df.columns:
+        missing = df[col].isnull().sum()
+        if missing > 0:
+            percentage = (missing / total) * 100
+            print(f"{col}: {missing} ({percentage:.2f}%)")
+
+def check_duplicates(df):
+    print("\n--- DUPLICATES CHECK ---")
+    duplicates = df.duplicated().sum()
+    print(f"Total duplicate rows: {duplicates}")
+
 def validate_tickets(df):
     print("\n--- VALIDATING TICKETS ---")
 
@@ -92,6 +108,8 @@ def main():
 
     datasets["tickets"] = convert_dates(datasets["tickets"])
 
+    analyze_missing_values(datasets["tickets"])
+    check_duplicates(datasets["tickets"])
     validate_tickets(datasets["tickets"])
 
 if __name__ == "__main__":
