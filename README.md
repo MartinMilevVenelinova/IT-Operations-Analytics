@@ -57,8 +57,7 @@ Includes realistic scenarios: - SLA breaches\
 
 ## Status
 
-🚧 In progress --- next steps: - SQL analysis - KPI definition - Power
-BI dashboard
+🚧 In progress --- next steps: - Power BI dashboard
 
 ------------------------------------------------------------------------
 
